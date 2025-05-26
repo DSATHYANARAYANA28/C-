@@ -11,3 +11,52 @@ And repeat (debug the errors if needed).
 
 
 Note: Up until now, we’ve been doing the magic for you; Step 2, 3, and 4 were all done by simply pressing the Run button.
+Compile & Execute
+Run your Hello World C++ program locally using the Terminal, Command Prompt, or Visual Studio Code.
+
+The Process
+C++ is a compiled language. That means that to get a program to run, you must first translate it from the human-readable form to something a machine can “understand.” That translation is done by a program called a compiler.
+
+What you read and write is called source code (usually it’s in an English-like language like C++), and what the computer executes is called executable, object code, or machine code (a machine language).
+
+Typically C++ source code files are given the suffix:
+
+.cpp (ex: hello.cpp) or
+.h (ex: std_lib_facilities.h).
+Image showing the build process from compiler to executable
+
+Compile:
+g++ hello.cpp -o hello
+
+A compiler translates the C++ program into machine language code which it stores on the disk as a file with the extension .o (e.g. hello.o). A linker then links the object code with standard library routines that the program may use and creates an executable image which is also saved on disk, usually as a file with the file name without any extension (e.g. hello).
+
+Execute:
+./hello
+
+The executable is loaded from the disk to memory and the computer’s CPU (Central Processing Unit) executes the program one instruction at a time.
+
+Running Hello World Locally:
+On the Mac, it’s called the Terminal. On Windows, it’s called the Command Prompt.
+
+Image showing a terminal and Windows command prompt
+
+Video Tutorials:
+Running Hello World via Terminal (Mac)
+Running Hello World via Command Prompt (Windows)
+Note: In the video above, some of the instructions for downloading and installing g++ are outdated.
+
+
+At 2:54 in the video, navigate to https://www.msys2.org instead of mingw.org.
+
+Under the “Installation” heading, complete steps 1 through 4 to download and install MSYS2. We recommend that you choose the default folder for installation.
+
+Complete steps 5 through 7 to ensure all packages are up to date and to install g++. Be sure to enter the commands exactly!
+
+To use the tools that you have downloaded and installed, you will need to add them to the PATH environment variable. Pick up in the video at 4:17 for instructions on how to do this, but note that the directory you add will be different! If you used the default installation location (C:\msys64), the directory you should add to PATH is C:\msys64\ucrt64\bin. If you installed MSYS2 elsewhere, simply add \ucrt64\bin to your installation location.
+
+Note that the Developer Command Prompt in Microsoft Visual Studio will not compile without following the previous steps. Ensure you have followed the instructions to run Hello World on the Command Prompt before installing Microsoft Visual Studio.
+
+Using Microsoft Visual Studio Code
+Compiling (xkcd)
+
+xkcd: Compiling
