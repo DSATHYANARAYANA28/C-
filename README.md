@@ -103,3 +103,56 @@ return 0;
 The return statement is used to end a function. If the program reaches this statement, returning a value of 0 is an indication to the operating system that the code executed successfully. This line of code is optional.
 C++ programs permit judicious use of white space (tabs, spaces, new lines) to create code that is easier to read. The compiler completely ignores the white space, with a small exception concerning if statements that will be covered later. It is highly recommended that you make use of white space to indent and separate lines of code to aid in the readability of your source code files.
 
+Basic Data Types
+C++ is a strongly typed language.
+
+Basic Data Types:
+C++ provides a rather large number of types. However, you can write perfectly good programs using only five of those:
+
+Basic C++ Data Types
+
+Here are some examples of declaring and initializing variables:
+
+int age = 28;
+
+double price = 8.99;
+
+char grade = 'A';
+
+std::string message = "Game Over";
+
+bool late_to_work = true;
+
+Datatype Modifiers:
+As the name implies, datatype modifiers are used with built-in data types to modify the length of data that a particular data type can hold. Data type modifiers in C++ are:
+
+signed
+unsigned
+short
+long
+We will learn about these in a bit!
+
+Const:
+const (constant) variables cannot be changed by your program during execution.
+
+const double quarter = 0.25;
+
+// and now variable quarter can only be 0.25
+
+Simply add the keyword const before the data type during declaration to make the variable not modifiable.
+
+Type Conversion:
+A type cast is basically a conversion from one type to another.
+
+The notation (type) value means “convert value to type“. So for example:
+
+double weight1;
+int weight2;
+
+weight1 = 154.49;
+weight2 = (int) weight1;
+
+// weight2 is now 154
+
+Note: Going from a double to an int simply removes the decimal. There’s no rounding involved.
+
