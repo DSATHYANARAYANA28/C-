@@ -84,3 +84,35 @@ The vector would now look like:
 because CTG is removed!
 
 Note: If you have programmed in other languages, be aware that .pop_back() has no return value in C++.
+
+.size()
+<std::vector> not only stores the elements; it also stores the size of the vector:
+
+size
+
+The .size() function returns the number of elements in the vector.
+
+For example, suppose we have a std::string vector with Sonny’s grocery list:
+
+std::vector<std::string> grocery = {"Hot Pepper Jam", "Dragon Fruit", "Brussel Sprouts"};
+
+Copy to Clipboard
+
+It should look something like this:
+
+https://content.codecademy.com/courses/learn-cpp/vectors/size1.png
+
+The string at index 0 is "Hot Pepper Jam".
+The string at index 1 is "Dragon Fruit".
+The string at index 2 is "Brussel Sprouts".
+std::cout << grocery.size() << "\n";
+
+Copy to Clipboard
+
+will return
+
+3
+
+Copy to Clipboard
+
+Notice how nothing goes in the parentheses.
