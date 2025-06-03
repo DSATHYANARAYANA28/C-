@@ -1,0 +1,40 @@
+##Vectors
+Index
+Now that we have a vector, how do we access an individual element? This is where index comes into play.
+
+An index refers to an element’s position within an ordered list. Vectors are 0-indexed, meaning the first element has index 0, the second index 1, and so on.
+
+For example, suppose we have a char vector with all the vowels:
+
+std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u'};
+
+Copy to Clipboard
+
+It should look something like this:
+
+vowels
+
+The character at index 0 is 'a'.
+The character at index 1 is 'e'.
+The character at index 2 is 'i'.
+The character at index 3 is 'o'.
+The character at index 4 is 'u'.
+To output each of the elements, we can do:
+
+std::cout << vowels[0] << "\n";
+std::cout << vowels[1] << "\n";
+std::cout << vowels[2] << "\n";
+std::cout << vowels[3] << "\n";
+std::cout << vowels[4] << "\n";
+
+Copy to Clipboard
+
+Using the notation vector[index] with square brackets after the vector name and the element’s index number inside.
+
+This will output:
+
+a
+e
+i
+o
+u
